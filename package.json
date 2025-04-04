@@ -1,0 +1,40 @@
+{
+  "name": "script-helper-3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/extension-accelerate": "^1.2.2",
+    "@reduxjs/toolkit": "^2.6.0",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.1.7",
+    "prisma": "^6.4.1",
+    "prismjs": "^1.29.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "request-ip": "^3.3.0",
+    "sass": "^1.85.1",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^20",
+    "@types/prismjs": "^1.26.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/request-ip": "^0.0.41",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "typescript": "^5"
+  }
+}

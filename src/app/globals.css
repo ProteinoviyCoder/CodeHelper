@@ -1,0 +1,345 @@
+:root {
+  --primary-color: #4d85c1; /* Тёмный синий, спокойный и надёжный */
+  --primary-dark-color: #2c517d; /* Глубокий синий для контраста и стабильности */
+  --primary-light-color: #88a9d8; /* Лёгкий голубой оттенок для мягкости и свежести */
+
+  --secondary-color: #7c3e8c; /* Более приглушённый пурпурный для гармонии */
+  --secondary-dark-color: #5a2374; /* Тёмный пурпурный, но более сбалансированный */
+  --secondary-light-color: #9e64b3; /* Пастельный пурпурный для лёгкости */
+
+  --background-primary-color: #f4f7fb; /* Очень светлый голубовато-серый для фона */
+  --background-secondary-color: #dce0f0; /* Светлый голубовато-серый для элементов и панелей */
+
+  --color-shadow: #00000020; /* Лёгкая тень для глубины, не слишком яркая */
+
+  --text-color-for-primary-color: #ffffff; /* Белый для текста на основном фоне */
+  --text-color-for-secondary-color: #ffffff; /* Белый текст для контраста с пурпурным */
+  --text-color-for-background-primary: #2f3d52; /* Тёмно-синий для текста на фоне */
+  --text-color-error: #d32f2f;
+}
+
+/* standart-theme */
+.theme-standart.theme-light-mode {
+  --primary-color: #4d85c1; /* Тёмный синий, спокойный и надёжный */
+  --primary-dark-color: #2c517d; /* Глубокий синий для контраста и стабильности */
+  --primary-light-color: #88a9d8; /* Лёгкий голубой оттенок для мягкости и свежести */
+
+  --secondary-color: #7c3e8c; /* Более приглушённый пурпурный для гармонии */
+  --secondary-dark-color: #5a2374; /* Тёмный пурпурный, но более сбалансированный */
+  --secondary-light-color: #9e64b3; /* Пастельный пурпурный для лёгкости */
+
+  --background-primary-color: #f4f7fb; /* Очень светлый голубовато-серый для фона */
+  --background-secondary-color: #dce0f0; /* Светлый голубовато-серый для элементов и панелей */
+
+  --background-error-color: #dc3545; /* Ярко-красный для ошибки */
+  --background-error-color-dark: #b02a37; /* Чуть темнее для hover */
+  --background-success-color: #28a745; /* Насыщенный зелёный для успеха */
+  --background-success-color-dark: #218838; /* Чуть темнее для hover */
+
+  --color-shadow: #00000020; /* Лёгкая тень для глубины, не слишком яркая */
+
+  --text-color-for-primary-color: #ffffff; /* Белый для текста на основном фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на зелёном фоне */
+  --text-color-for-secondary-color: #ffffff; /* Белый текст для контраста с пурпурным */
+  --text-color-for-background-primary: #2f3d52; /* Тёмно-синий для текста на фоне */
+  --text-color-error: #d32f2f;
+}
+.theme-standart.theme-dark-mode {
+  --primary-color: #3c6fa2; /* Тёмный синий для спокойствия и глубины */
+  --primary-dark-color: #2b4b7e; /* Очень тёмный синий для стабильности и контраста */
+  --primary-light-color: #6a8bc6; /* Лёгкий голубовато-синий для выделения */
+
+  --secondary-color: #6a2a6e; /* Тёмный пурпурный для элегантности */
+  --secondary-dark-color: #4d1a54; /* Очень тёмный пурпурный для акцентов */
+  --secondary-light-color: #8d4d8e; /* Лёгкий пурпурный для приглушённого контраста */
+
+  --background-primary-color: #1e2630; /* Очень тёмный синий-серый для основного фона */
+  --background-secondary-color: #2a3444; /* Тёмно-серый с голубоватым оттенком для панелей и элементов */
+
+  --background-error-color: #b22222; /* Насыщенный тёмно-красный */
+  --background-error-color-dark: #8b1a1a; /* Чуть темнее для hover */
+  --background-success-color: #218838; /* Глубокий тёмно-зелёный */
+  --background-success-color-dark: #19692c; /* Чуть темнее для hover */
+
+  --color-shadow: #00000060; /* Темная тень для улучшенной глубины и контраста */
+
+  --text-color-for-primary-color: #ffffff; /* Белый для текста на основном фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на тёмно-красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на тёмно-зелёном фоне */
+  --text-color-for-secondary-color: #ffffff; /* Белый для текста на элементах */
+  --text-color-for-background-primary: #dce0f0; /* Светло-серый для текста на тёмном фоне */
+  --text-color-error: #ff6b6b;
+}
+
+/* orange-theme */
+.theme-orange.theme-light-mode {
+  --primary-color: #e67e22; /* Мягкий оранжевый для акцентов */
+  --primary-dark-color: #d35400; /* Тёмный оранжевый для контраста */
+  --primary-light-color: #f39c12; /* Лёгкий светло-оранжевый для выделений */
+
+  --secondary-color: #f39c12; /* Яркий, но не агрессивный оранжевый для вторичных элементов */
+  --secondary-dark-color: #e67e22; /* Оранжевый с более глубоким оттенком для акцентов */
+  --secondary-light-color: #f5b042; /* Мягкий пастельный оранжевый для выделений */
+
+  --background-primary-color: #f9f3e6; /* Лёгкий бежевый с оранжевым оттенком для фона */
+  --background-secondary-color: #f1e3c6; /* Слегка тёплый светлый фон для элементов */
+
+  --background-error-color: #e74c3c; /* Ярко-красный для ошибок */
+  --background-error-color-dark: #c0392b; /* Темнее для hover */
+  --background-success-color: #27ae60; /* Ярко-зелёный для успешных состояний */
+  --background-success-color-dark: #2ecc71; /* Темно-зелёный для hover */
+
+  --color-shadow: #00000020; /* Лёгкая тень для глубины элементов */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст на оранжевом фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на зелёном фоне */
+  --text-color-for-secondary-color: #ffffff; /* Белый текст для контраста с оранжевым */
+  --text-color-for-background-primary: #2c3e50; /* Тёмно-синий для текста на светлом фоне */
+  --text-color-error: #ffffff; /* Белый текст на ошибках */
+}
+.theme-orange.theme-dark-mode {
+  --primary-color: #d35400; /* Мягкий тёмный оранжевый для акцентов */
+  --primary-dark-color: #c0392b; /* Более насыщенный оранжевый для контраста */
+  --primary-light-color: #f39c12; /* Лёгкий светло-оранжевый для выделений */
+
+  --secondary-color: #e67e22; /* Меньше яркий, но глубокий оранжевый для вторичных элементов */
+  --secondary-dark-color: #9e5f2a; /* Тёмный оранжевый для акцентов */
+  --secondary-light-color: #f5b042; /* Пастельный оранжевый для мягких выделений */
+
+  --background-primary-color: #2c3e50; /* Тёмно-серый фон с оранжевыми акцентами */
+  --background-secondary-color: #34495e; /* Тёмно-синий для элементов */
+
+  --background-error-color: #c0392b; /* Красный для ошибок */
+  --background-error-color-dark: #e74c3c; /* Ярко-красный для акцентов */
+  --background-success-color: #27ae60; /* Зеленый для успеха */
+  --background-success-color-dark: #2ecc71; /* Тёмно-зелёный для акцентов */
+
+  --color-shadow: #00000060; /* Темная тень для улучшенной глубины */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст на тёмно-оранжевом фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на зелёном фоне */
+  --text-color-for-secondary-color: #ffffff; /* Белый текст для контраста с оранжевым */
+  --text-color-for-background-primary: #ecf0f1; /* Светлый текст на тёмном фоне */
+  --text-color-error: #ffffff; /* Белый текст на ошибках */
+}
+
+/* space-theme */
+.theme-space.theme-light-mode {
+  --primary-color: #1e2a47; /* Глубокий космический синий, как ночное небо */
+  --primary-dark-color: #0a1020; /* Почти чёрный, как глубокий космос */
+  --primary-light-color: #5b6e8b; /* Легкий голубой с оттенком серого для акцентов */
+
+  --secondary-color: #7986cb; /* Космический фиолетовый с синим отливом, как туманности */
+  --secondary-dark-color: #4e5b9b; /* Более темный фиолетовый для контраста, как тёмные облака в космосе */
+  --secondary-light-color: #9fa8da; /* Мягкий светлый фиолетовый для плавных переходов */
+
+  --background-primary-color: #101b2e; /* Почти чёрный, как ночной космос */
+  --background-secondary-color: #0f1823; /* Темно-синий, как глубокий космос */
+
+  --background-error-color: #ff2d55; /* Ярко-красный, как пульсирующая звезда */
+  --background-error-color-dark: #b22344; /* Тёмно-красный для hover на фоне ошибки */
+  --background-success-color: #4caf50; /* Успех, зелёный как планетарная растительность */
+  --background-success-color-dark: #388e3c; /* Темнее для hover */
+
+  --color-shadow: #00000070; /* Полупрозрачная тень, как свет от далёких звёзд */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст, как свет звезд */
+  --text-color-for-secondary-color: #cccccc; /* Светло-серый для акцентов */
+  --text-color-for-background-primary: #e0e0e0; /* Очень светлый серый, как пыль космических объектов */
+  --text-color-error: #ff2d55; /* Ярко-красный, как пульсирующая звезда */
+}
+.theme-space.theme-dark-mode {
+  --primary-color: #0d1b28; /* Глубокий космический синий с оттенками чёрного */
+  --primary-dark-color: #000a13; /* Абсолютно чёрный, как галактическая тьма */
+  --primary-light-color: #3d5575; /* Яркий синий для акцентов, как яркая звезда в пустоте */
+
+  --secondary-color: #4a6e8c; /* Глубокий голубой оттенок, как туманность в космосе */
+  --secondary-dark-color: #2f4f65; /* Тёмный голубой с серым отливом, как атмосферное облако */
+  --secondary-light-color: #8fa9c4; /* Лёгкий небесно-голубой, как вспышки света от дальних объектов */
+
+  --background-primary-color: #000000; /* Чёрный, как бездна космоса */
+  --background-secondary-color: #0d0d0d; /* Почти чёрный, как тень планет и звезд */
+
+  --background-error-color: #ff4081; /* Ярко-розовый, как вспышка на горизонте сверхновой */
+  --background-error-color-dark: #b12b59; /* Тёмно-розовый для hover на фоне ошибки */
+  --background-success-color: #388e3c; /* Успех, зелёный, как трава на чуждой планете */
+  --background-success-color-dark: #2c6d2d; /* Темнее для hover */
+
+  --color-shadow: #00000090; /* Глубокая тень, как космический вакуум */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст для контраста на тёмном фоне */
+  --text-color-for-secondary-color: #f0f0f0; /* Светло-серый для выделений и кнопок */
+  --text-color-for-background-primary: #bdbdbd; /* Серый текст для фона, как космическая пыль */
+  --text-color-error: #ff4081; /* Ярко-розовый для ошибок */
+}
+
+/* wine-theme */
+.theme-wine.theme-light-mode {
+  --primary-color: #7e3b3d;
+  --primary-dark-color: #5a1e1f;
+  --primary-light-color: #a47f82;
+
+  --secondary-color: #b95c6d;
+  --secondary-dark-color: #8b3d48;
+  --secondary-light-color: #d89a9f;
+
+  --background-primary-color: #f3f0f3;
+  --background-secondary-color: #e1d6d6;
+
+  --background-error-color: #e03e3e;
+  --background-error-color-dark: #b52e2e;
+  --background-success-color: #2d7b52;
+  --background-success-color-dark: #20563a;
+
+  --color-shadow: #00000015;
+
+  --text-color-for-primary-color: #ffffff;
+  --text-color-for-background-error: #ffffff;
+  --text-color-for-background-success: #ffffff;
+  --text-color-for-secondary-color: #000000;
+  --text-color-for-background-primary: #675a5a;
+  --text-color-error: #e03e3e;
+}
+.theme-wine.theme-dark-mode {
+  --primary-color: #6f2a2a;
+  --primary-dark-color: #4b1e1e;
+  --primary-light-color: #9f6c6c;
+
+  --secondary-color: #9e5f6d;
+  --secondary-dark-color: #7b3f47;
+  --secondary-light-color: #d2a2a6;
+
+  --background-primary-color: #2c1e1e;
+  --background-secondary-color: #3f2a2a;
+
+  --background-error-color: #b22222;
+  --background-error-color-dark: #8b1a1a;
+  --background-success-color: #2d7b52;
+  --background-success-color-dark: #20563a;
+
+  --color-shadow: #00000040;
+
+  --text-color-for-primary-color: #ffffff;
+  --text-color-for-background-error: #ffffff;
+  --text-color-for-background-success: #ffffff;
+  --text-color-for-secondary-color: #f2d8d8;
+  --text-color-for-background-primary: #c6b2b2;
+  --text-color-error: #ff6b6b;
+}
+
+/* brown-theme */
+.theme-brown.theme-light-mode {
+  --primary-color: #8e735b; /* Элегантный коричневый с золотистым оттенком */
+  --primary-dark-color: #6d4b3d; /* Тёмный шоколадный для контраста */
+  --primary-light-color: #c8a982; /* Светлый песочно-коричневый для выделений */
+
+  --secondary-color: #a67c52; /* Тёплый карамельный оттенок для вторичных элементов */
+  --secondary-dark-color: #8c643d; /* Более тёмный для акцентов */
+  --secondary-light-color: #d4b996; /* Светлый бежево-коричневый для приглушённого контраста */
+
+  --background-primary-color: #f8f1e3; /* Очень светлый, почти бежевый фон для мягкости */
+  --background-secondary-color: #e7d5b7; /* Светлый кремовый для панелей и карточек */
+
+  --background-error-color: #e74c3c; /* Ярко-красный для ошибок */
+  --background-error-color-dark: #c0392b; /* Тёмный красный для акцентов */
+  --background-success-color: #27ae60; /* Ярко-зелёный для успешных состояний */
+  --background-success-color-dark: #2ecc71; /* Темно-зелёный для акцентов */
+
+  --color-shadow: #00000020; /* Лёгкая тень для глубины */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст на коричневом фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на зелёном фоне */
+  --text-color-for-secondary-color: #3a3a3a; /* Тёмно-серый для вторичных элементов */
+  --text-color-for-background-primary: #3a3a3a; /* Тёмно-серый для текста на светлом фоне */
+  --text-color-error: #e74c3c; /* Ярко-красный для текста ошибок */
+}
+
+.theme-brown.theme-dark-mode {
+  --primary-color: #7c5d40; /* Тёмный коричневый с золотистыми акцентами */
+  --primary-dark-color: #5b442b; /* Глубокий шоколадный оттенок для контраста */
+  --primary-light-color: #b59a6f; /* Светлый золотисто-коричневый для выделений */
+
+  --secondary-color: #a67c52; /* Тёплый карамельный для акцентов */
+  --secondary-dark-color: #8c643d; /* Темно-коричневый для акцентов */
+  --secondary-light-color: #d4b996; /* Светлый бежево-коричневый для панелей */
+
+  --background-primary-color: #2f2b22; /* Очень тёмный коричневый для фона */
+  --background-secondary-color: #4e4739; /* Тёмно-коричневый для панелей и элементов */
+
+  --background-error-color: #c0392b; /* Тёмно-красный для ошибок */
+  --background-error-color-dark: #b22222; /* Тёмный красный для акцентов */
+  --background-success-color: #27ae60; /* Ярко-зелёный для успешных состояний */
+  --background-success-color-dark: #2ecc71; /* Темно-зелёный для акцентов */
+
+  --color-shadow: #00000060; /* Глубокая тень для контраста */
+
+  --text-color-for-primary-color: #ffffff; /* Белый текст на тёмном фоне */
+  --text-color-for-background-error: #ffffff; /* Белый текст на тёмно-красном фоне */
+  --text-color-for-background-success: #ffffff; /* Белый текст на тёмно-зелёном фоне */
+  --text-color-for-secondary-color: #d5d8dc; /* Светлый текст на коричневом фоне */
+  --text-color-for-background-primary: #d5d8dc; /* Светлый текст на тёмном фоне */
+  --text-color-error: #ff6b6b; /* Ярко-красный для текста ошибок */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  color: var(--text-color-for-background-primary);
+  background-color: var(--background-primary-color);
+  height: 100%;
+
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto !important;
+
+  display: flex;
+  gap: 20px;
+}
+
+.not-found-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3rem;
+}

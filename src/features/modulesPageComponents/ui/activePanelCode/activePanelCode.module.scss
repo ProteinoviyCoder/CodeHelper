@@ -1,0 +1,81 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--background-primary-color);
+  border: 1px solid var(--text-color-for-background-primary);
+  border-radius: 15px;
+}
+
+.code {
+  border-radius: 10px;
+  height: 350px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--background-primary-color);
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-for-background-primary);
+    border-radius: 5px;
+  }
+}
+
+.textarea {
+  border-radius: 15px;
+  height: 98%;
+  resize: none;
+  padding: 10px;
+  background-color: transparent;
+  width: 100%;
+  color: var(--text-color-for-background-primary);
+  border: none;
+  outline: none;
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--background-primary-color);
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--text-color-for-background-primary);
+    border-radius: 5px;
+  }
+}
+
+.buttons {
+  position: absolute;
+  bottom: 18px;
+  right: 23px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  & button {
+    width: fit-content;
+  }
+}
+
+.btn-change {
+  padding: 5px 7px !important;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.text-error {
+  color: var(--text-color-error);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--text-color-for-background-primary);
+  padding-top: 5px;
+}

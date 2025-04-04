@@ -1,0 +1,53 @@
+@keyframes animSneckbar {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 20px;
+    // transform: translateX(50%);
+  }
+}
+
+.container-snackbar {
+  position: fixed;
+  bottom: 25px;
+  z-index: 9001;
+
+  width: 100%;
+  max-width: 270px;
+  min-height: 55px;
+  max-height: 55px;
+
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px 3px var(--color-shadow);
+
+  animation: animSneckbar 0.2s ease forwards;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+
+  & span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.container-snackbar.information {
+  background-color: var(--background-success-color);
+  color: var(--text-color-for-background-success);
+}
+
+.container-snackbar.error {
+  background-color: var(--background-error-color);
+  color: var(--text-color-for-background-error);
+}

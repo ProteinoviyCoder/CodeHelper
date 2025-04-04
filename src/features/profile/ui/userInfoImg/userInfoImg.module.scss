@@ -1,0 +1,46 @@
+.user-info_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-img {
+  & svg,
+  & img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--text-color-for-background-primary);
+  }
+}
+
+.input-file {
+  & input {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+  }
+
+  padding: 5px 20px;
+  border: 1px solid var(--text-color-for-background-primary);
+  margin: 0;
+  height: 37px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--text-color-for-background-primary);
+      color: var(--background-primary-color);
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.error-message {
+  color: var(--text-color-error);
+  font-size: 0.8rem;
+  text-align: center;
+}

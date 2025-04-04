@@ -1,0 +1,146 @@
+.script-container {
+  width: 100%;
+  max-width: 48%;
+
+  border: 1px solid var(--text-color-for-background-primary);
+  border-radius: 15px;
+  box-shadow: 0 0 8px 6px var(--color-shadow);
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    160deg,
+    var(--background-secondary-color),
+    var(--primary-light-color) 230%
+  );
+}
+
+.script-versions {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5px;
+
+  border-bottom: 2px solid var(--text-color-for-background-primary);
+
+  user-select: none;
+}
+
+.versions-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.version {
+  width: 50px;
+
+  padding: 5px 15px;
+  border-right: 1px solid var(--text-color-for-background-primary);
+  border-bottom: 1px solid var(--text-color-for-background-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:first-child {
+    border-top-left-radius: 15px;
+  }
+
+  &:hover {
+    background-color: var(--primary-dark-color);
+    color: var(--text-color-for-primary-color);
+  }
+}
+
+.version-active {
+  color: var(--text-color-for-primary-color);
+  cursor: default;
+  background: linear-gradient(
+    to right,
+    var(--primary-light-color) 50%,
+    var(--secondary-color)
+  );
+}
+
+.btn-detail-container {
+  padding: 0px;
+}
+
+@keyframes animName {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.script-name {
+  padding: 10px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--text-color-for-background-primary);
+  transition: 0.3s ease;
+  overflow: hidden;
+
+  & p {
+    animation: animName 0.3s ease forwards;
+    text-align: center;
+  }
+}
+
+@keyframes animButtons {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.script-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: auto;
+
+  overflow: hidden;
+
+  padding: 10px;
+
+  & button {
+    animation: animButtons 0.4s ease forwards;
+  }
+}
+
+.text-btn-detail-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .script-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .script-name {
+    font-size: 1.1rem;
+  }
+  .text-btn-detail {
+    display: none;
+  }
+
+  .text-btn-detail-mobile {
+    display: block;
+  }
+}

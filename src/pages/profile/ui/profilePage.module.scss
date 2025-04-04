@@ -1,0 +1,23 @@
+.section-profile {
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 1px solid var(--text-color-for-background-primary);
+  border-right: 1px solid var(--text-color-for-background-primary);
+  padding: 10px 15px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.user-info_content {
+  width: 100%;
+  border: 1px solid var(--text-color-for-background-primary);
+  border-radius: 15px;
+  padding: 10px 20px;
+  box-shadow: 0 0 6px 2px var(--color-shadow);
+}

@@ -1,0 +1,114 @@
+@keyframes animLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2520deg);
+  }
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 20px;
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px var(--color-shadow);
+
+  user-select: none;
+
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  @media (hover: hover) {
+    &:hover {
+      transition: 0.3s ease;
+      transform: scale(0.99);
+    }
+  }
+
+  & .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .loader svg {
+    font-size: 1.2rem;
+    animation: animLoader 5s linear infinite;
+  }
+}
+
+.default-btn {
+  border: none;
+  color: var(--text-color-for-primary-color);
+  background-color: var(--primary-color);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-dark-color);
+    }
+  }
+}
+
+.button.primary {
+  border: none;
+  color: var(--text-color-for-primary-color);
+  background-color: var(--primary-color);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-dark-color);
+    }
+  }
+}
+
+.button.secondary {
+  border: none;
+  color: var(--text-color-for-secondary-color);
+  background-color: var(--secondary-color);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--secondary-dark-color);
+    }
+  }
+}
+
+.button.error {
+  border: none;
+  color: var(--text-color-for-background-error);
+  background-color: var(--background-error-color);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--background-error-color-dark);
+    }
+  }
+}
+
+.button.outline {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0 0;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--text-color-for-primary-color);
+      border: 1px solid var(--text-color-for-primary-color);
+    }
+  }
+}

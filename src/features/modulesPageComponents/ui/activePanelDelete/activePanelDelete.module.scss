@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  margin-top: 25px;
+
+  & button {
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.modal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 10px 0px;
+
+  & button {
+    width: fit-content;
+  }
+}
+
+.text-error {
+  color: var(--text-color-error);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 5px;
+}

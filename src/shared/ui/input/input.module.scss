@@ -1,0 +1,133 @@
+.div-input {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--text-color-for-background-primary);
+  margin: 14px 0 14px;
+  min-width: 200px;
+  background-color: inherit;
+
+  color: inherit;
+}
+
+.input-name {
+  position: absolute;
+
+  color: inherit;
+
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 1px 5px;
+
+  font-size: 1rem;
+  line-height: 0.8rem;
+
+  border-top-left-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: inherit;
+
+  transition: 0.3s ease;
+
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.input-name-focused {
+  opacity: 1;
+  position: absolute;
+
+  top: 0px !important;
+  left: 15px !important;
+  transform: translateY(-50%);
+
+  border-width: 1px;
+  border-color: inherit;
+  border-style: solid;
+
+  // border-bottom-width: 1px;
+  // border-bottom-color: inherit;
+  // border-bottom-style: solid;
+
+  // border-left-width: 1px;
+  // border-left-color: inherit;
+  // border-left-style: solid;
+
+  // border-right-width: 1px;
+  // border-right-color: inherit;
+  // border-right-style: solid;
+
+  transition: 0.3s ease;
+
+  font-size: 0.7rem;
+  line-height: 0.75rem;
+}
+
+.input {
+  background-color: inherit;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  width: 100%;
+  padding: 10px 10px;
+  margin-top: 2px;
+
+  color: inherit;
+  font-size: 1.1rem;
+
+  &:focus {
+    box-shadow: 0 4px 6px 3px var(--color-shadow);
+  }
+
+  &:-internal-autofill-selected {
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    width: 100%;
+    padding: 10px 10px;
+
+    color: var(--text-color-for-background-primary);
+    font-size: 1.1rem;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    transition: background-color 0s 900000s, color 0s 900000s !important;
+  }
+}
+
+.icon-password {
+  cursor: pointer;
+
+  color: inherit;
+
+  position: absolute;
+  top: 49%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.error {
+  position: absolute;
+  bottom: -16px;
+  width: 100%;
+
+  font-size: 0.7rem;
+  line-height: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: var(--text-color-error);
+}

@@ -1,0 +1,15 @@
+.groups-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  border-bottom: 2px solid var(--text-color-for-background-primary);
+}
+
+.group-active {
+  background: linear-gradient(
+    to right,
+    var(--primary-light-color) 50%,
+    var(--secondary-color)
+  );
+  cursor: default;
+}

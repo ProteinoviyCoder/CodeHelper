@@ -1,0 +1,10 @@
+.container-setting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 10px;
+  border-bottom: 2px solid var(--text-color-for-primary-color);
+
+  margin-bottom: 10px;
+}

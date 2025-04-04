@@ -1,0 +1,71 @@
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 15px;
+
+  user-select: none;
+}
+
+.btn-icon {
+  width: fit-content;
+  padding: 7px 10px !important;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.delete-btn-container {
+  width: 130px;
+}
+
+.copy-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+
+  & p {
+    font-size: 1.3rem;
+  }
+}
+
+.copy-btn-container_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.modal-buttons {
+  margin: 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  & button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 550px) {
+  .buttons-container {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 25px;
+  }
+
+  .delete-btn-container {
+    margin-right: auto;
+  }
+  .copy-btn-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.container-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+  & .btn-icon {
+    width: fit-content;
+    padding: 5px 7px;
+
+    & svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

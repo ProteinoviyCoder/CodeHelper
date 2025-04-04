@@ -1,0 +1,20 @@
+.title-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-change-title {
+  width: fit-content !important;
+  padding: 5px 7px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+  }
+}

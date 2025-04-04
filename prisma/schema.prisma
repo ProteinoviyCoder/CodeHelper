@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model User {
+  id  Int @id @default(autoincrement())
+  userEmail String @unique
+  userPassword String
+  username String?
+  userImg String?
+  userRole String
+
+  userRefreshToken String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userTheme Theme @relation(fields: [themeId], references: [id])
+  themeId Int
+}
+
+model Theme {
+  id Int @id @default(autoincrement())
+
+  themeMode String
+  themeVariant String
+
+  users User[]
+}
+
+model Script {
+  id Int @id @default(autoincrement())
+  versions Version[]
+}
+
+model Version {
+  id Int @id @default(autoincrement())
+  name String
+  v Int
+  description String
+  buttons Button[]
+
+  script Script @relation(fields: [scriptId], references: [id], onDelete: Cascade)
+  scriptId Int
+}
+
+model Button {
+  id Int @id @default(autoincrement())
+  buttonText String
+  script String
+
+  version Version @relation(fields: [versionId], references: [id], onDelete: Cascade)
+  versionId Int
+}
+
+model Module {
+  id Int @id @default(autoincrement())
+  img String?
+  name String
+  groups String[]
+  code String
+}
+
+model ModulesGroup {
+  id Int @id @default(autoincrement())
+  group String @unique
+}

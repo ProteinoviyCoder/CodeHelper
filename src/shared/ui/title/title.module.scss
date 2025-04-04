@@ -1,0 +1,36 @@
+.title {
+  margin: 0;
+  // word-break: break-all;
+}
+
+.s1 {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+.s2 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.s3 {
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+}
+
+@media (max-width: 800px) {
+  .s1 {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+
+  .s2 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  .s3 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
