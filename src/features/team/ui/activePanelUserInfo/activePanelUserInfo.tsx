@@ -3,10 +3,7 @@ import { Dispatch, FC, memo, SetStateAction } from "react";
 import { TeamuUser } from "../../model/types";
 import { FiUser } from "react-icons/fi";
 import { Title } from "@/shared/ui/title/title";
-import { Button } from "@/shared/ui/button/button";
-import { AiFillEdit } from "react-icons/ai";
 import { User } from "@/entities/user/model/types";
-import { Permissions } from "@/shared/model/config/permissions";
 import { ActivePanelUserRole } from "../activePanelUserRole/activePanelUserRole";
 import { ActivePanelUserDelete } from "../activePanelUserDelete/activePanelUserDelete";
 

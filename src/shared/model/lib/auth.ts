@@ -1,7 +1,7 @@
 import { getAllUsers } from "@/app/api/auth/cache";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 export const hashPassword = async (password: string) => {
   const saltRounds: number = 15;

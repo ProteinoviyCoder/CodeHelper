@@ -29,7 +29,9 @@ const ArchiveScriptInitial: FC<ArchiveScriptInitialProps> = ({
 
   useEffect(() => {
     if (isOpenPanel) {
-      setActiveScript && setActiveScript(script);
+      if (setActiveScript !== undefined) {
+        setActiveScript(script);
+      }
     }
   }, [script]);
 
@@ -64,9 +66,10 @@ const ArchiveScriptInitial: FC<ArchiveScriptInitialProps> = ({
             }}
             variant="primary"
             onClick={() => {
-              setNumberActiveScript && setNumberActiveScript(currentVersion);
-              setIsOpenPanel && setIsOpenPanel(true);
-              setActiveScript && setActiveScript(script);
+              if (setNumberActiveScript !== undefined)
+                setNumberActiveScript(currentVersion);
+              if (setIsOpenPanel !== undefined) setIsOpenPanel(true);
+              if (setActiveScript !== undefined) setActiveScript(script);
             }}
           >
             <p className={style["text-btn-detail"]}>Подробнее</p>

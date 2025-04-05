@@ -18,7 +18,8 @@ const moduleGroupsSlice = createSlice({
       state.groups = action.payload;
     },
     clearGroupsState(state) {
-      state = { activeGroup: "Все" };
+      state.activeGroup = "Все";
+      state.groups = undefined;
     },
     setCurrentGroup(state, action: PayloadAction<string>) {
       state.activeGroup = action.payload;

@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  for (let version of versions) {
+  for (const version of versions) {
     if (version.description.length > 999) {
       return NextResponse.json(
         { message: "Максимальное кол-во символов 999" },

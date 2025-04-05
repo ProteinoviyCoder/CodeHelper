@@ -1,6 +1,7 @@
 import prisma from "../../../../prisma/prisma";
 
 declare global {
+  // eslint-disable-next-line no-var
   var modules:
     | {
         id: number;
@@ -10,6 +11,7 @@ declare global {
         code: string;
       }[]
     | null;
+  // eslint-disable-next-line no-var
   var modulesGroups:
     | {
         id: number;

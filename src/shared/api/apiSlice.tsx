@@ -2,10 +2,12 @@ import { actionLogoutUser } from "@/entities/user/model/userSlice";
 import { actionClearGroupsState } from "@/features/modulesPageComponents/model/moduleGroupsSlice";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const fetchBaseQueryWithMiddlware = async (
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   args: any,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   api: any,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   extraOptions: any
 ) => {
   let result = await fetchBaseQuery({ baseUrl: "/api" })(

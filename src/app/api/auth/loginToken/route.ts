@@ -39,5 +39,10 @@ export async function GET(req: NextRequest) {
     ...userForClient
   } = currentUser;
 
+  void userPassword;
+  void userRefreshToken;
+  void createdAt;
+  void updatedAt;
+
   return NextResponse.json({ ...userForClient });
 }

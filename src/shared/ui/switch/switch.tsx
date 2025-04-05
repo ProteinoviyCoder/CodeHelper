@@ -19,7 +19,9 @@ const SwitchInitial: FC<SwitchInitialProps> = ({ onClick, isSwitch }) => {
   };
 
   useEffect(() => {
-    typeof isSwitch === "boolean" && setIsActive(isSwitch);
+    if (typeof isSwitch === "boolean") {
+      setIsActive(isSwitch);
+    }
   }, [isSwitch]);
   return (
     <label

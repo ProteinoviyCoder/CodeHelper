@@ -27,7 +27,7 @@ const UserInfoThemeInitial: FC = () => {
     if (!html) return;
 
     let themeVariant = "theme-standart";
-    let themeMode = !isSwitch ? "dark" : "light";
+    const themeMode = !isSwitch ? "dark" : "light";
     const themeVariantLocalStorage = localStorage.getItem("theme-variant");
 
     if (userData) {

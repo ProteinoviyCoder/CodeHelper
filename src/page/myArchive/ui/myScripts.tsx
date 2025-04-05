@@ -5,7 +5,6 @@ import style from "./myScripts.module.scss";
 import { FC, memo, useEffect, useState } from "react";
 import { ArchiveScript } from "@/features/archiveScript/ui/script/script";
 import { ActiveScriptPanel } from "@/features/archiveScript/ui/activeScriptPanel/activeScriptPanel";
-import { BsArrowRight } from "react-icons/bs";
 import { useGetAllScriptsQuery } from "../api/scriptsEndpoints";
 import { Loader } from "@/shared/ui/loader/loader";
 import { useAppSelector } from "@/shared/model/hooks";
@@ -92,7 +91,9 @@ const MyScriptsPageInitial: FC = () => {
   );
 
   useEffect(() => {
-    error && console.error(error);
+    if (error !== undefined) {
+      console.error(error);
+    }
 
     const myError =
       error && typeof error === "object" && "data" in error

@@ -3,7 +3,6 @@
 import { Dispatch, FC, memo, SetStateAction, useEffect, useState } from "react";
 import style from "./activeScriptPanel.module.scss";
 import { ArchiveScriptType } from "../../model/types";
-import { HighlightCode } from "@/features/highlightCode/ui/highlightCode";
 import { ActivePanelTitle } from "../activePanelTitle/activePanelTitle";
 import { User } from "@/entities/user/model/types";
 import { ActivePanelDescription } from "../activePanelDescription/activePanelDescription";

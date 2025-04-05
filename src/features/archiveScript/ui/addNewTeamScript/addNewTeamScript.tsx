@@ -172,7 +172,7 @@ const AddNewTeamScriptInitial: FC<AddNewScriptInitialProps> = ({
   };
 
   const handleCreateNewScript = async () => {
-    for (let version of versions) {
+    for (const version of versions) {
       if (version.description.length > 999) {
         setErrorDescription("Максимальное кол-во символов 999");
         return;

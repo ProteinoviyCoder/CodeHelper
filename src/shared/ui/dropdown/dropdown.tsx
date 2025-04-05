@@ -31,7 +31,9 @@ const DropdownInitial: FC<DropdownInitialProps> = ({
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleClickListener = (e: MouseEvent): void => {
-    !dropdownRef.current?.contains(e.target as Node) && setIsOpen(false);
+    if (!dropdownRef.current?.contains(e.target as Node)) {
+      setIsOpen(false);
+    }
   };
 
   const calculateHeight = () => {
@@ -138,7 +140,9 @@ const DropdownInitial: FC<DropdownInitialProps> = ({
                       setTextDropdown(variant);
                     }
                     setIsOpen(!isOpen);
-                    onChange && onChange(e);
+                    if (onChange !== undefined) {
+                      onChange(e);
+                    }
                   }}
                   className={style["dropdown_menu-item"]}
                   title={variant}

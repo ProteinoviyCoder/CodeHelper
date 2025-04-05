@@ -80,6 +80,11 @@ export async function POST(req: Request) {
     ...userWithoutPasswordAndRefreshToken
   } = currentUser;
 
+  void userPassword;
+  void userRefreshToken;
+  void createdAt;
+  void updatedAt;
+
   const jwtToken = createJwtToken(currentUser.userEmail, currentUser.id);
 
   const response = NextResponse.json({

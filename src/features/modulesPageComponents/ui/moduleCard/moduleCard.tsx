@@ -1,16 +1,8 @@
 "use client";
 
 import style from "./moduleCard.module.scss";
-import {
-  Dispatch,
-  FC,
-  memo,
-  MouseEvent,
-  SetStateAction,
-  useState,
-} from "react";
+import { Dispatch, FC, memo, SetStateAction, useState } from "react";
 import { ModuleCardType } from "../../model/types";
-import Image from "next/image";
 import { Title } from "@/shared/ui/title/title";
 import { Button } from "@/shared/ui/button/button";
 import { ModalImg } from "@/shared/ui/modalImg/modalImg";
@@ -63,7 +55,9 @@ const ModuleCardInitial: FC<ModuleCardInitialProps> = ({
     setTextSneckbar(`Модуль скопирован`);
     setVariantSneckbar("information");
     setIsOpenSneckbar(true);
-    onClickCard && onClickCard();
+    if (onClickCard !== undefined) {
+      onClickCard();
+    }
     try {
       await navigator.clipboard.writeText(code);
     } catch (error) {

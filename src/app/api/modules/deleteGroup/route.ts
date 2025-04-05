@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
 
     allModulesGroups.splice(currentModulesGroupIndex, 1);
   } catch (error) {
-    return NextResponse.json({ message: "Ошибка БД" }, { status: 404 });
+    return NextResponse.json({ message: "Ошибка БД", error }, { status: 404 });
   }
 
   return NextResponse.json({

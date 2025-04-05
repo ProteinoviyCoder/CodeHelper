@@ -20,6 +20,12 @@ export async function GET(req: NextRequest) {
       ...coreDataUser
     } = user;
 
+    void userPassword;
+    void userRefreshToken;
+    void updatedAt;
+    void themeId;
+    void userTheme;
+
     return coreDataUser;
   });
 

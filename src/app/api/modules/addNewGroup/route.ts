@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     });
     resetCacheModulesGroups();
   } catch (error) {
-    return NextResponse.json({ message: "Ошибка БД" }, { status: 404 });
+    return NextResponse.json({ message: "Ошибка БД", error }, { status: 404 });
   }
 
   return NextResponse.json({

@@ -1,7 +1,9 @@
 import prisma from "../../../../prisma/prisma";
 import jwt from "jsonwebtoken";
 
+// eslint-disable-next-line no-var
 declare global {
+  // eslint-disable-next-line no-var
   var allUsers:
     | {
         id: number;

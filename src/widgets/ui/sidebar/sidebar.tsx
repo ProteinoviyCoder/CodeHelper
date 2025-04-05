@@ -57,7 +57,7 @@ const SidebarInitital: FC = () => {
   return (
     <aside
       className={`${style["sidebar"]} ${isOpenSidebar ? style["active"] : ""}`}
-      onClick={(e) => {
+      onClick={() => {
         dispatch(actionToggleSidebar(false));
       }}
     >

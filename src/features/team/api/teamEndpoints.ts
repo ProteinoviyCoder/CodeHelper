@@ -51,7 +51,7 @@ const teamEndpoints = api
             userTeamId,
           },
         }),
-        invalidatesTags: (_, __, arg) => [{ id: "LIST", type: "Team" }],
+        invalidatesTags: () => [{ id: "LIST", type: "Team" }],
       }),
 
       addNewUserTeam: build.mutation<TeamResponseDTO, AddNewUserTeamDTO>({
@@ -62,7 +62,7 @@ const teamEndpoints = api
             newUserTeam,
           },
         }),
-        invalidatesTags: (_, __, arg) => [{ id: "LIST", type: "Team" }],
+        invalidatesTags: () => [{ id: "LIST", type: "Team" }],
       }),
     }),
   });

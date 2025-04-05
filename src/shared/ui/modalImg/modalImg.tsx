@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./modalImg.module.scss";
 import { Dispatch, FC, memo, SetStateAction } from "react";
 import { createPortal } from "react-dom";

@@ -1,6 +1,7 @@
 import prisma from "../../../../prisma/prisma";
 
 declare global {
+  // eslint-disable-next-line no-var
   var allScripts:
     | ({
         versions: ({
