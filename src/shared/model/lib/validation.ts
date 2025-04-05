@@ -31,12 +31,12 @@ export const validationInput = (symbol: string, word: string) => {
 };
 
 export const validationSubmitForm = (...inputs: string[]) => {
-  let report = {
+  const report = {
     status: false,
     message: "",
   };
 
-  for (let inputValue of inputs) {
+  for (const inputValue of inputs) {
     const word = inputValue;
     const lastSymbol = inputValue[inputValue.length - 1];
     const result = validationInput(lastSymbol, word);

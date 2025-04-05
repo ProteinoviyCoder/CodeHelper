@@ -73,12 +73,17 @@ export async function POST(req: Request) {
   }
 
   const {
-    userPassword: _,
-    userRefreshToken: __,
-    createdAt: ___,
-    updatedAt: ____,
+    userPassword,
+    userRefreshToken,
+    createdAt,
+    updatedAt,
     ...userWithoutPasswordAndRefreshToken
   } = currentUser;
+
+  void userPassword;
+  void userRefreshToken;
+  void createdAt;
+  void updatedAt;
 
   const jwtToken = createJwtToken(currentUser.userEmail, currentUser.id);
 
