@@ -1,4 +1,4 @@
-import { ModulesPage } from "@/pages/modulesPage/ui/modulesPage";
+import { ModulesPage } from "@/page/modulesPage/ui/modulesPage";
 import { JSX } from "react";
 
 export default function Components(): JSX.Element {
