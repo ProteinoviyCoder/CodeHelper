@@ -107,8 +107,8 @@ const AddNewTeamScriptInitial: FC<AddNewScriptInitialProps> = ({
     const text = e.target.value.trim();
     const lastSymbol = text[text.length];
 
-    if (text.length > 20) {
-      setErrorNameBtn("Максимальное кол-во символов 20");
+    if (text.length > 25) {
+      setErrorNameBtn("Максимальное кол-во символов 25");
       return;
     }
 
@@ -194,11 +194,11 @@ const AddNewTeamScriptInitial: FC<AddNewScriptInitialProps> = ({
       let errorButtons: string | null = null;
 
       for (const btn of version.buttons) {
-        if (btn.buttonText.length > 15) {
+        if (btn.buttonText.length > 25) {
           setErrorNameBtn(
-            "Максисальное кол-во символов для названия кнопки 15"
+            "Максисальное кол-во символов для названия кнопки 25"
           );
-          errorButtons = "Максисальное кол-во символов для названия кнопки 15";
+          errorButtons = "Максисальное кол-во символов для названия кнопки 25";
           return;
         }
         if (btn.buttonText.length < 1) {
