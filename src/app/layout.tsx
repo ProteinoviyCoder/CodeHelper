@@ -1,3 +1,5 @@
+"use client";
+
 import "@/app/globals.css";
 import { ReactNode } from "react";
 import { Providers } from "./provider";
@@ -13,10 +15,6 @@ type RootLayoutProps = {
 };
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "300", "600"] });
-
-export const metadata = {
-  title: "CodeHelper",
-};
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
