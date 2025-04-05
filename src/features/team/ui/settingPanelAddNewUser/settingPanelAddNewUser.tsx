@@ -198,7 +198,7 @@ const SettingPanelAddNewUserInitial: FC = () => {
       </Button>
       <Button
         onClick={handleCreateNewUserTeam}
-        variant="secondary"
+        variant="primary"
         disabled={isLoading}
       >
         Добавить

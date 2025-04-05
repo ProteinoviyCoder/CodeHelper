@@ -88,17 +88,17 @@ const ModuleGroupTabInitial: FC<ModuleGroupTabInitialProps> = ({
           >
             <div className={style["modal-buttons"]}>
               <Button
+                onClick={() => setIsOpenModalWindow(false)}
+                variant="error"
+              >
+                Отменить
+              </Button>
+              <Button
                 onClick={handleDeleteGroup}
                 variant="primary"
                 disabled={isLoading}
               >
                 Удалить
-              </Button>
-              <Button
-                onClick={() => setIsOpenModalWindow(false)}
-                variant="error"
-              >
-                Отменить
               </Button>
             </div>
           </ModalWindow>
