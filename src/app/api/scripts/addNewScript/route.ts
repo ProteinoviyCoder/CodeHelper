@@ -65,8 +65,8 @@ export async function POST(req: NextRequest) {
     let errorButtons: string | null = null;
 
     for (const btn of version.buttons) {
-      if (btn.buttonText.length > 20) {
-        errorButtons = "Максисальное кол-во символов для названия кнопки 20";
+      if (btn.buttonText.length > 25) {
+        errorButtons = "Максисальное кол-во символов для названия кнопки 25";
         return;
       }
       if (btn.buttonText.length < 1) {
