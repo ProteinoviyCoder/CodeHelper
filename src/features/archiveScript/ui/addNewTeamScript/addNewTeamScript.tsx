@@ -107,8 +107,8 @@ const AddNewTeamScriptInitial: FC<AddNewScriptInitialProps> = ({
     const text = e.target.value.trim();
     const lastSymbol = text[text.length];
 
-    if (text.length > 15) {
-      setErrorNameBtn("Максимальное кол-во символов 15");
+    if (text.length > 20) {
+      setErrorNameBtn("Максимальное кол-во символов 20");
       return;
     }
 
@@ -273,12 +273,12 @@ const AddNewTeamScriptInitial: FC<AddNewScriptInitialProps> = ({
         setIsOpen={setIsOpenModalWindow}
         footer={
           <div className={style["modal-footer-container"]}>
-            <Button onClick={handleClearAll} variant="primary">
+            <Button onClick={handleClearAll} variant="error">
               Отменить
             </Button>
             <Button
               onClick={handleCreateNewScript}
-              variant="secondary"
+              variant="primary"
               disabled={isLoading}
             >
               Создать

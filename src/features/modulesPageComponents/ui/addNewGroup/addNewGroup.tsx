@@ -107,15 +107,15 @@ const AddNewGroupInitial: FC<AddNewGroupInitialProps> = ({ userData }) => {
           ></Input>
 
           <div className={style["modal-buttons"]}>
+            <Button onClick={handleClearAll} variant="error">
+              Отменить
+            </Button>
             <Button
               onClick={handleCreateNewGroup}
               variant="primary"
               disabled={isLoading}
             >
               Создать
-            </Button>
-            <Button onClick={handleClearAll} variant="error">
-              Отменить
             </Button>
           </div>
         </div>

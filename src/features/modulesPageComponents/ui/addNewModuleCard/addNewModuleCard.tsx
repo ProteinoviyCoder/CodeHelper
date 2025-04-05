@@ -193,7 +193,7 @@ const AddNewModuleCardInitial: FC<AddNewModuleCardInitialProps> = ({
       </Button>
       <Button
         onClick={handleCreateModule}
-        variant="secondary"
+        variant="primary"
         disabled={isLoading}
       >
         Создать
