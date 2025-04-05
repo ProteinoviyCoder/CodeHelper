@@ -1,7 +1,7 @@
 "use client";
 
 import style from "./input.module.scss";
-import { FC, memo, ReactNode, useEffect, useState } from "react";
+import { FC, memo, ReactNode, useState } from "react";
 import { HiEye, HiEyeSlash } from "react-icons/hi2";
 
 type InputInitialProps = {

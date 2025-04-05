@@ -55,6 +55,8 @@ const ActivePanelUserDeleteInitial: FC<ActivePanelUserDeleteInitialProps> = ({
       setTextSneckbar(myError);
       setIsOpenSneckbar(true);
 
+      setTextError(myError);
+
       return;
     }
 

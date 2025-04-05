@@ -49,7 +49,9 @@ const ModuleGroupTabInitial: FC<ModuleGroupTabInitialProps> = ({
       return;
     }
 
-    setCurrentGroup && setCurrentGroup("Все");
+    if (setCurrentGroup !== undefined) {
+      setCurrentGroup("Все");
+    }
     if (parentSneckaber) {
       parentSneckaber.setIsOpenSneckbar(true);
       parentSneckaber.setTextSneckbar("Группа удалена");

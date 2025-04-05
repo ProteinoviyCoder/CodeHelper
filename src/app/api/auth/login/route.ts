@@ -73,10 +73,10 @@ export async function POST(req: Request) {
   }
 
   const {
-    userPassword,
-    userRefreshToken,
-    createdAt,
-    updatedAt,
+    userPassword: _,
+    userRefreshToken: __,
+    createdAt: ___,
+    updatedAt: ____,
     ...userWithoutPasswordAndRefreshToken
   } = currentUser;
 

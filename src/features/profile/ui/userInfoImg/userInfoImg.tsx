@@ -3,7 +3,7 @@
 import style from "./userInfoImg.module.scss";
 import { useAppDispatch, useAppSelector } from "@/shared/model/hooks";
 import Image from "next/image";
-import { FC, memo, useEffect, useState } from "react";
+import { FC, memo, useState } from "react";
 import { FiUser } from "react-icons/fi";
 import { ErrorReadFile } from "../../model/types";
 import { actionChangeUserImg } from "@/entities/user/model/userSlice";

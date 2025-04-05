@@ -32,10 +32,10 @@ export async function GET(req: NextRequest) {
   }
 
   const {
-    userPassword,
-    userRefreshToken,
-    createdAt,
-    updatedAt,
+    userPassword: _,
+    userRefreshToken: __,
+    createdAt: ___,
+    updatedAt: ____,
     ...userForClient
   } = currentUser;
 

@@ -76,7 +76,7 @@ const ActivePanelGroupsInitial: FC<ActivePanelGroupsInitialProps> = ({
   };
 
   const handleCancelChanges = () => {
-    moduleGroups ? moduleGroups.map((group) => group.group) : null;
+    setCurrentGroups(groups);
     setErrorText("");
     setIsChangeMode(false);
   };

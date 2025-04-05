@@ -1,4 +1,4 @@
-import { FC, memo, ReactNode, useEffect } from "react";
+import { FC, memo, ReactNode } from "react";
 import style from "./button.module.scss";
 import { ImSpinner8 } from "react-icons/im";
 

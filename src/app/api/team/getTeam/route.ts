@@ -12,11 +12,11 @@ export async function GET(req: NextRequest) {
 
   const allUsersTeam = allUsers.map((user) => {
     const {
-      userPassword,
-      userRefreshToken,
-      updatedAt,
-      themeId,
-      userTheme,
+      userPassword: _,
+      userRefreshToken: __,
+      updatedAt: ___,
+      themeId: ____,
+      userTheme: _____,
       ...coreDataUser
     } = user;
 

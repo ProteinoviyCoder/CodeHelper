@@ -23,7 +23,9 @@ const TeamPageInitial: FC = () => {
   }
   return (
     <div className={style["page-container"]}>
-      <SettingPanel></SettingPanel>
+      <SettingPanel
+        userData={userData === null ? undefined : userData}
+      ></SettingPanel>
       <TeamList userData={userData ? userData : undefined}></TeamList>
     </div>
   );

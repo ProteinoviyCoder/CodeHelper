@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import style from "./activePanel.module.scss";
-import { Dispatch, FC, memo, ReactNode, SetStateAction, useState } from "react";
+import { Dispatch, FC, memo, ReactNode, SetStateAction } from "react";
 
 type ActivePanelInitialProps = {
   children: ReactNode;

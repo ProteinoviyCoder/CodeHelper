@@ -1,7 +1,6 @@
 import { checkedAllowedRoles, verifyUserToken } from "@/shared/model/lib/auth";
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "../../../../../prisma/prisma";
-import { validationInput } from "@/shared/model/lib/validation";
 import { getAllModules } from "../cache";
 
 export async function POST(req: NextRequest) {

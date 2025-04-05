@@ -5,7 +5,6 @@ import { useLazyUserLoginByTokenQuery } from "../api/authProviderEndpoints";
 import { useAppDispatch, useAppSelector } from "@/shared/model/hooks";
 import { actionSetUserData } from "@/entities/user/model/userSlice";
 import { Loader } from "@/shared/ui/loader/loader";
-import { skip } from "node:test";
 
 type AuthProviderInitialProps = {
   children: ReactNode;
@@ -21,7 +20,7 @@ const AuthProviderInitial: FC<AuthProviderInitialProps> = ({ children }) => {
   const [timeoutReached, setTimeoutReached] = useState<boolean>(false);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout | null;
+    let timeout: NodeJS.Timeout | null = null;
 
     if (userData) return;
     if (isAuth) return;
@@ -32,7 +31,9 @@ const AuthProviderInitial: FC<AuthProviderInitialProps> = ({ children }) => {
     handleTryAuthUser();
 
     return () => {
-      timeout && clearTimeout(timeout);
+      if (timeout !== null) {
+        clearTimeout(timeout);
+      }
     };
   }, []);
 

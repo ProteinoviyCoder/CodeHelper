@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, memo, useState } from "react";
+import { FC, memo } from "react";
 import style from "./header.module.scss";
 import { useAppDispatch, useAppSelector } from "@/shared/model/hooks";
 import { usePathname, useRouter } from "next/navigation";
