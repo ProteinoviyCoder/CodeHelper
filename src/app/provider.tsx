@@ -1,7 +1,7 @@
 "use client";
 
 import { Provider as ProviderRedux } from "react-redux";
-import { store } from "./(store)/store";
+import { store } from "../shared/model/(store)/store";
 import { ReactNode } from "react";
 
 type ProvidersProps = {
