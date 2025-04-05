@@ -33,6 +33,7 @@ export const getAllScripts = async () => {
       include: {
         versions: { include: { buttons: true }, orderBy: { v: "asc" } },
       },
+      orderBy: { id: "desc" },
     });
   } else {
     console.log("Скрипты уже есть");
