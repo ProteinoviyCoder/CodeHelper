@@ -2,7 +2,7 @@ import { MyScriptsPage } from "@/page/myArchive/ui/myScripts";
 import { JSX } from "react";
 
 export const metadata = {
-  title: "CodeHelper | Команда",
+  title: "CodeHelper | Скрипты",
   icons: {
     icon: "/favicon.png",
   },
