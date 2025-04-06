@@ -2,7 +2,7 @@ import { SigninPage } from "@/page/signin/ui/signin";
 import { JSX } from "react";
 
 export const metadata = {
-  title: "CodeHelper | Команда",
+  title: "CodeHelper | Вход",
   icons: {
     icon: "/favicon.png",
   },

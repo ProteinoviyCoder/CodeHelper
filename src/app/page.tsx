@@ -2,7 +2,7 @@ import { ModulesPage } from "@/page/modulesPage/ui/modulesPage";
 import { JSX } from "react";
 
 export const metadata = {
-  title: "CodeHelper | Команда",
+  title: "CodeHelper | Модули",
   icons: {
     icon: "/favicon.png",
   },
