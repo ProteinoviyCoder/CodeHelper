@@ -82,11 +82,7 @@ const ArchiveScriptInitial: FC<ArchiveScriptInitialProps> = ({
       <div className={style["script-name"]}>
         {script.versions.map((versionScript) => {
           if (versionScript.v === currentVersion) {
-            return (
-              <p key={versionScript.v}>
-                {versionScript.name} v-{versionScript.v}
-              </p>
-            );
+            return <p key={versionScript.v}>{versionScript.name}</p>;
           }
         })}
       </div>
